@@ -106,6 +106,6 @@ Instance:
 Static:
 <img src = "images\Snipaste_2023-12-29_12-04-19.png">
 
-**Instance**和**static**的区别：
+`Instance`和`static`的区别：
 
 <img src = "images\Snipaste_2023-12-29_11-58-25.png"/>
