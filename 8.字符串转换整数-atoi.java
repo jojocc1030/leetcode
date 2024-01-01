@@ -14,7 +14,7 @@ class Solution {
        int i = 0;
        int res = 0;
         
-       if(toInt.length == 0) return 0;
+       if(toInt.length == 0) return 0;  // ******** 重要！ 检验此时字符串是否已经结束！ 因为涉及到后续toInt[i]的合法性问题
        while (toInt[i] == ' ') {
         i ++;
         if(i == toInt.length) return 0;   // ******** 重要！ 检验此时字符串是否已经结束！ 因为涉及到后续toInt[i]的合法性问题
