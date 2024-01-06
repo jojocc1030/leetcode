@@ -175,3 +175,29 @@ class Solution {
 - 单个字符转整数：`res = '9' - '0'`
 - 整数越界判断（在系统最多只能存32位情况下）<img src = "images\Snipaste_2023-12-31_13-39-10.png"/>
 - `Integer.MAX_VALUE / Integer.MIN_VALUE` 表示java的最大/最小整数
+
+
+# 双指针相关题型
+
+### [26] 删除有序数组中的重复项
+
+```java
+class Solution {
+    public int removeDuplicates(int[] nums) {  //经典双指针问题
+        int p = 0;
+        int q = 1;
+        while (q < nums.length) {
+            if(nums[p] != nums[q]) {
+                if(q - p > 1) nums[++ p] = nums[q]; //优化速度，避免nums[p+1] 和nums[q]在原地址进行复制
+                else p ++;
+            }
+            q ++;
+            
+        }
+        return p + 1;
+    }   
+}
+```
+
+推荐题解： https://leetcode.cn/problems/remove-duplicates-from-sorted-array/solutions/34033/shuang-zhi-zhen-shan-chu-zhong-fu-xiang-dai-you-hu/
+
