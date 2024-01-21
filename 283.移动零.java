@@ -18,7 +18,7 @@ class Solution {
                 q ++;
             }
 
-            else if(nums[p] == 0 &&nums[q] == 0) q ++; //p找到第一个为0的元素下标，q继续后移
+            else if(nums[p] == 0 && nums[q] == 0) q ++; //p找到第一个为0的元素下标，q继续后移
             else if(nums[p] == 0 && nums[q] != 0){  // 此时p指向第一个0，q指向第一个非0
                 nums[p] = nums[q];
                 nums[q] = 0;
