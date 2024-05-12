@@ -12,6 +12,14 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
+        hashtable = dict()
+
+        for i, n in enumerate(nums):
+            if target - n in hashtable:
+                return [i, hashtable[target - n]]
+            hashtable[n] = i
+        return []
+
         
 # @lc code=end
 
