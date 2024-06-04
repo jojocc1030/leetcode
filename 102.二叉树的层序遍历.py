@@ -12,7 +12,7 @@
 #         self.left = left
 #         self.right = right
 import collections
-
+ 
 
 class Solution:
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
